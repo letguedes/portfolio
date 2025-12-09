@@ -1,0 +1,57 @@
+/* Estilos padrão (Mobile-first) */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--cor-secundaria);
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+}
+
+    .nav-links.active {
+        display: flex;
+    }
+
+.menu-toggle {
+    display: block;
+}
+
+@media (min-width: 768px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background: none;
+    }
+
+    /* Layout da página Projetos */
+    .projetos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    /* Layout da página Sobre Mim */
+    .perfil {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .descricao {
+        text-align: left;
+    }
+
+    .foto-perfil {
+        order: 0; 
+    }
+
+    
+}
