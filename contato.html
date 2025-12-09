@@ -1,21 +1,26 @@
+
 <!-- Inicio o HTML-->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <!-- Crio o cabeçalho da página-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio | Formação</title>
+    <title>Meu Portfólio | Contato</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+<!-- Crio o corpo da página-->
 <body>
-    <!-- Crio o corpo da página-->
     <header>
+        <!-- Crio a barra de navegação da página-->
         <nav class="navbar">
             <a href="index.html" class="logo">Letícia Guedes Vieira</a>
             <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+            <!-- Crio os botões de navegação entre as páginas-->
             <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="formacao.html">Formação</a></li>
@@ -23,20 +28,26 @@
             </ul>
         </nav>
     </header>
+    <!-- Crio o formulário de contato-->
+    <main class="contato-main">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
-    <main class="hero-section">
-        <section>
-            <h1>Olá, meu nome é Letícia, sou analista financeira e atual estudante de Ciência de Dados.</h1>
-            <p>Especialista em controladoria, busco conhecer melhor a área de tecnologia e no futuro poder criar ferramentas de análise e businness intelligence.</p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        </section>
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit" class="cta-button">Enviar Mensagem</button>
+        </form>
+        <p id="form-message" class="hidden"></p>
     </main>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <!-- Crio o rodapé da página-->
     <footer>
         <p>&copy; 2025 - Letícia Guedes Vieira. Todos os direitos reservados.</p>
